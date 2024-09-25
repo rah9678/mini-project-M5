@@ -1,0 +1,105 @@
+/* styles.css */
+
+/* Estilo do container */
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: hsl(0, 0%, 0%); /* Fundo branco para o container */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para o título */
+h1 {
+    text-align: center;
+    color: #2e7d32; /* Verde escuro para o título */
+}
+
+/* Estilo para subtítulos */
+h2 {
+    color: #2e7d32; /* Verde escuro para subtítulos */
+    margin-top: 20px;
+    text-align: center; /* Centraliza o subtítulo */
+}
+p{
+    color: #000;
+}
+
+/* Lista de referências */
+.references-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaçamento entre os cartões */
+    margin-bottom: 30px;
+}
+
+/* Estilo dos cartões */
+.card {
+    flex: 1 1 calc(33.333% - 20px); /* Três cartões por linha, ajustando o espaço */
+    background-color: brown; /* Fundo claro para os cartões */
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s; /* Efeito de hover suave */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Efeito de hover para os cartões */
+.card:hover {
+    transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}
+
+/* Estilo dos inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* Margem entre os inputs */
+    border: 1px solid #ffb400; /* Borda amarela */
+    background: none;
+    color: #000; /* Texto preto */
+    font-size: 1em;
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+input::placeholder {
+    color: #999; /* Placeholder em cinza */
+}
+
+/* Estilo para foco nos inputs */
+input:focus {
+    border-color: #2e7d32; /* Borda verde ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Estilo do botão */
+button {
+    background-color: #2e7d32; /* Botão verde */
+    color: white; /* Texto branco */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Muda o cursor para mãozinha */
+    font-size: 16px;
+    margin-top: 10px; /* Margem acima do botão */
+    transition: background-color 0.3s; /* Efeito de transição suave */
+}
+
+/* Efeito de hover para o botão */
+button:hover {
+    background-color: #1b5e20; /* Verde mais escuro ao passar o mouse */
+}
+
+/* Estilo da mensagem de erro */
+.error-message {
+    color: #e53935; /* Vermelho para mensagens de erro */
+    text-align: center; /* Centraliza a mensagem de erro */
+    margin-top: 10px; /* Margem acima da mensagem de erro */
+}
