@@ -1,6 +1,7 @@
 import React from "react";
 import './style.css'; 
 import { Link } from 'react-router-dom';
+import logo from '../../assets/logoheader.png'
 
 
 
@@ -16,14 +17,9 @@ const Header = () => {
             <li><Link to="/pesquisar">PESQUISAR</Link></li>
             <li><Link to="/reference">REFERÊNCIAS</Link></li>
             <li><Link to="/sobre">SOBRE</Link></li>
-            <li className="social-icons">
-              <a href="#instagram"><i className="fab fa-instagram"></i></a>
-              <a href="#facebook"><i className="fab fa-facebook-f"></i></a>
-              <a href="#twitter"><i className="fab fa-twitter"></i></a>
-            </li>
           </ul>
           <div className="logo">
-            <img src="logo.png" alt="Logo" />
+            <img src={logo} alt="Logo" />
           </div>
         </nav>
       </header>
