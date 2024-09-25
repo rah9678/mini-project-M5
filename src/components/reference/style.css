@@ -1,0 +1,103 @@
+/* Container principal */
+.container {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Títulos */
+  h1, h2 {
+    color: #333;
+    text-align: center;
+  }
+  
+  h3 {
+    color: #555;
+  }
+  
+  /* Estilo da lista de referências */
+  .references-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .references-list .card {
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(30% - 20px); /* Três cards por linha */
+    transition: transform 0.2s;
+  }
+  
+  .references-list .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .references-list img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .references-list .card h4 {
+    margin: 10px 0 5px;
+  }
+  
+  .references-list button {
+    background-color: #ff4d4d;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .references-list button:hover {
+    background-color: #ff1a1a;
+  }
+  
+  /* Inputs e botões */
+  input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: calc(100% - 24px);
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .result-container {
+    background-color: #e8f0fe;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+  }
+  
